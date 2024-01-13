@@ -1,0 +1,119 @@
+:root{
+    background-image: url(../../assets/img/sky.jpg);
+    background-size:cover;
+    ::placeholder{
+        color:#fff;
+    }
+}
+.body{
+    -webkit-backdrop-filter: blur(8px);  /* Safari 9+ */
+    backdrop-filter: saturate(180%) blur(10px); /* Chrome and Opera */
+    box-shadow: 0px 10px 15px 10px rgb(0 0 0 / 15%);
+    background-color: rgba(209, 82, 82, 0.15); 
+    border-radius: 40px;
+    padding:15px;
+    width:100%;
+    margin-bottom: 20px;
+    input{
+        -webkit-backdrop-filter: blur(8px);  /* Safari 9+ */
+        backdrop-filter: saturate(180%) blur(10px); /* Chrome and Opera */
+        background-color: rgba(82, 209, 199, 0.1);
+        border-radius: 40px;
+        padding:10px;
+        width:60%;
+        border-color:#fff;
+        outline: none;
+        color:#fff;
+        font-size: 20px;
+        text-align: center;
+    }
+    header{
+        display:flex;
+        justify-content: space-between;
+        align-items: center;
+        p{
+            color:#fff;
+            background-color: rgba(139, 204, 200, 0.6784313725);
+            border: 1px solid #fff;
+            border-radius:15px;
+            padding: 5px 10px;
+            font-weight: 800;
+        }
+        svg{
+            color:#fff;
+            font-size:35px;
+            padding:10px;
+            &:hover{
+                color:#4d8486;
+                cursor: pointer;
+            }
+        }
+        h2{
+            color:#fff;
+            font-weight: 400;
+            letter-spacing: 1.4px;
+        }
+    }
+    .main-body{
+        margin:25px 0;
+        p:first-of-type{
+            font-size:45px;
+            padding:5px;
+            color:#fff;
+        }
+        p:last-of-type{
+            color:#fff;
+            font-size: 25px;
+            letter-spacing:1.4px;
+            font-weight:100;
+            text-transform:capitalize;
+        }
+
+    }
+    .more-info{
+        & .day{
+            color:#4d8486;
+            font-size:20px;
+            text-transform: capitalize;
+        }
+        .atmosphere{
+            display:flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: row;
+            width:100%;
+            margin-top:20px;
+
+            .box{
+                background-color: #8bccc8ad;
+                flex-basis:30%;
+                margin:0 1.66%;
+                padding:10px 0;
+                border-radius:10px;
+                border:1px solid #fff;
+            }
+        }
+        .riseSet{
+            margin-top:20px;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            .box{
+            display:flex;
+            justify-content: space-around;
+            align-items: center;
+            flex-direction:column;
+            &>*{
+                color:#4d8486;
+                text-transform:capitalize;
+            }
+            & > p:nth-of-type(2){
+                font-size: 20px;
+            }
+            & > img{
+                width:50px;
+            }
+            }
+        }
+    }
+}
